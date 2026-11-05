@@ -37,7 +37,7 @@ export default function HomePage() {
             <div className="relative aspect-[4/5] overflow-hidden bg-mist sm:aspect-[5/4] lg:aspect-[4/5]">
               <Image
                 src="/images/hero.jpg"
-                alt="African and international professionals collaborating around a meeting table"
+                alt="African professionals in discussion around a boardroom table"
                 fill
                 priority
                 className="object-cover"
@@ -54,7 +54,7 @@ export default function HomePage() {
             <div className="relative aspect-[4/5] overflow-hidden">
               <Image
                 src="/images/professional.jpg"
-                alt="A professional seated beside an office window"
+                alt="An African professional standing beside an office window"
                 fill
                 className="object-cover"
                 sizes="(min-width: 1024px) 40vw, 100vw"
@@ -214,7 +214,7 @@ export default function HomePage() {
             <div className="relative aspect-[16/11] overflow-hidden">
               <Image
                 src="/images/careers.jpg"
-                alt="Professionals listening during a workplace meeting"
+                alt="Two African professionals in conversation at a meeting table"
                 fill
                 className="object-cover"
                 sizes="(min-width: 1024px) 50vw, 100vw"

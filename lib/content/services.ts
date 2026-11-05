@@ -48,7 +48,7 @@ export const services: Service[] = [
     delivery:
       "We begin with a scoping conversation, confirm the activities and systems involved, and agree how queries and reports will move. The service is then reviewed against that agreement.",
     image: "/images/consult.jpg",
-    imageAlt: "Two professionals greeting each other in a bright office",
+    imageAlt: "An African professional listening during a consultation",
     icon: "briefcase",
   },
   {
@@ -76,7 +76,7 @@ export const services: Service[] = [
     delivery:
       "Each search starts with the role requirements, the location, the employment type and the decision timeline. We agree the channels and the shortlist format before applications are invited.",
     image: "/images/interview.jpg",
-    imageAlt: "A professional portrait in a contemporary workplace",
+    imageAlt: "Portrait of an African professional in a workplace",
     icon: "search",
   },
   {
@@ -104,7 +104,7 @@ export const services: Service[] = [
     delivery:
       "We confirm the pay population, the cut-off, the approval step and the reports required. The organisation approves inputs before the run is closed.",
     image: "/images/desk.jpg",
-    imageAlt: "Hands reviewing documents and a laptop during payroll preparation",
+    imageAlt: "An African professional on a phone call at a desk with documents",
     icon: "wallet",
   },
   {
@@ -132,7 +132,7 @@ export const services: Service[] = [
     delivery:
       "We agree which worker groups are in scope, which system holds the record, and who may approve an extension. Changes are confirmed in writing.",
     image: "/images/meeting.jpg",
-    imageAlt: "Professionals in a business meeting reviewing work together",
+    imageAlt: "African professionals in discussion around a boardroom table",
     icon: "files",
   },
   {
@@ -160,7 +160,7 @@ export const services: Service[] = [
     delivery:
       "We confirm the audience, the objective, the format and the date. After the session we share attendance and the agreed follow-up points.",
     image: "/images/training.jpg",
-    imageAlt: "Colleagues in a training discussion around a meeting table",
+    imageAlt: "An African facilitator leading a workshop discussion at a flipchart",
     icon: "graduation",
   },
   {
@@ -188,7 +188,7 @@ export const services: Service[] = [
     delivery:
       "Advice is given against the documents and facts supplied. We agree response times for routine queries and a separate path for urgent employee-relations matters.",
     image: "/images/advisory.jpg",
-    imageAlt: "A professional team in discussion in a meeting room",
+    imageAlt: "Two African colleagues talking beside an office window",
     icon: "scale",
   },
   {
@@ -216,7 +216,7 @@ export const services: Service[] = [
     delivery:
       "We confirm the duties, the workplace requirements and the approval step. No one is presented as available to start until those points are clear.",
     image: "/images/collab.jpg",
-    imageAlt: "Colleagues collaborating around a laptop in an office",
+    imageAlt: "African colleagues working on laptops in an open office",
     icon: "clock",
   },
   {
@@ -244,7 +244,7 @@ export const services: Service[] = [
     delivery:
       "We list the plans in scope, the eligibility rules we have been given, and the calendar for changes. Anything outside that list is referred back.",
     image: "/images/handshake.jpg",
-    imageAlt: "Two professionals shaking hands across a meeting table",
+    imageAlt: "Two African professionals shaking hands",
     icon: "heart",
   },
 ];

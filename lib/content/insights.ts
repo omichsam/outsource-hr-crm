@@ -29,7 +29,7 @@ export const articles: Article[] = [
     date: "2026-09-16",
     category: "HR Management",
     image: "/images/consult.jpg",
-    imageAlt: "Two professionals greeting each other in a bright office",
+    imageAlt: "An African professional listening during a consultation",
     paragraphs: [
       "Outsourcing a piece of human resource work fails most often for a simple reason. The organisation and the provider never wrote down the same task list. One side hears “run our HR”. The other hears a defined set of administration. The gap appears later, usually in a hurry, around a leaver, a payroll change or an unhappy employee.",
       "Before any work moves, name the activities. Employee files, onboarding checklists, leave records, query handling and monthly reports are different jobs. Say which of them are included. Say which systems hold the record of truth. Say who inside the organisation may instruct a change, and who must approve it when the change affects pay or a contract.",
@@ -46,7 +46,7 @@ export const articles: Article[] = [
     date: "2026-08-04",
     category: "Recruitment",
     image: "/images/interview.jpg",
-    imageAlt: "A professional portrait in a contemporary workplace",
+    imageAlt: "Portrait of an African professional in a workplace",
     paragraphs: [
       "A hiring manager who says “we will know the right person when we see them” is usually short of time, not short of standards. The difficulty is that an unstated standard cannot be applied evenly. Candidates are left guessing, and the shortlist reflects whoever was easiest to find.",
       "A usable brief answers a few plain questions. What will this person do in the first six months? Where will they work, and when? Which requirements are essential, and which are useful but teachable? Who decides, and by when? Those answers do not need to become a long specification. They do need to be stable enough to screen against.",
@@ -63,7 +63,7 @@ export const articles: Article[] = [
     date: "2026-07-21",
     category: "Employment Practices",
     image: "/images/advisory.jpg",
-    imageAlt: "Colleagues in a meeting reviewing a matter together",
+    imageAlt: "Two African colleagues talking beside an office window",
     paragraphs: [
       "Most organisations have a procedure for something that matters: probation, leave, grievance, discipline, or ending employment. The procedure is only as useful as the record behind it. A conversation that nobody noted is difficult to recall accurately three months later, and impossible to explain calmly if the matter becomes formal.",
       "A sufficient note is short. It records the date, who was present, what was discussed, what was decided and what was agreed as the next step. It does not need to be a transcript. It does need to be written while the memory is fresh and shared with the people who must act on it.",
@@ -80,7 +80,7 @@ export const articles: Article[] = [
     date: "2026-06-11",
     category: "Payroll",
     image: "/images/desk.jpg",
-    imageAlt: "A desk prepared for detailed administrative work",
+    imageAlt: "An African professional on a phone call at a desk with documents",
     paragraphs: [
       "Employees experience payroll as a promise: the right amount, on the agreed day, with a payslip they can read. That promise is kept by a calendar, not by a last-minute effort. The organisations that pay calmly have decided, in advance, when inputs close and who is allowed to approve them.",
       "List the inputs. New starters, leavers, unpaid leave, overtime, allowances, advances and any change to an account or a statutory detail. Each one needs an owner and a cut-off. An input that arrives after the cut-off waits for the next run unless the organisation has a written exception path.",
@@ -97,7 +97,7 @@ export const articles: Article[] = [
     date: "2026-05-19",
     category: "Career Development",
     image: "/images/careers.jpg",
-    imageAlt: "A team working together in a bright office",
+    imageAlt: "Two African professionals in conversation at a meeting table",
     paragraphs: [
       "Job advertisements vary in quality. Some are precise. Some are hopeful. Before you spend an evening on an application, read for the facts that will shape your working life if you are successful.",
       "Start with the duties, not the adjectives. A title such as “executive” or “lead” means little until you can see the work. Look for what the person will produce, who they will work with, and whether the role supervises anyone. If those points are missing, it is reasonable to ask before you apply.",
@@ -114,7 +114,7 @@ export const articles: Article[] = [
     date: "2026-04-08",
     category: "Leadership",
     image: "/images/team.jpg",
-    imageAlt: "A diverse professional team standing together in an office",
+    imageAlt: "An African facilitator leading a workshop discussion at a flipchart",
     paragraphs: [
       "Teams rarely need a speech. They need to know what matters this week, what “done” looks like, and how to say when something is blocking the work. Managers who provide those three things, steadily, are already practising leadership.",
       "Priorities should be few enough to remember. When everything is urgent, people choose for themselves, and the choices will not match. A short weekly note or a standing meeting with a real agenda is enough. Cancel it when there is nothing to decide, rather than filling it.",

@@ -19,7 +19,7 @@ export default function IndustriesPage() {
         title="Supporting organisations across diverse industries."
         lede="Different workplaces create different workforce pressures. These notes describe the kind of support Avenyra Global can provide. They are not a list of current clients."
         image="/images/office.jpg"
-        imageAlt="A modern open office prepared for professional work"
+        imageAlt="Portrait of an African professional in a workplace"
       />
       {industries.map((industry, index) => (
         <section key={industry.slug} id={industry.slug} className={`scroll-mt-24 ${index % 2 ? "bg-mist" : "bg-white"}`}>

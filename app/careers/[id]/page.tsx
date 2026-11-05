@@ -1,14 +1,20 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { CvForm } from "@/components/CvForm";
 import { SiteShell } from "@/components/SiteShell";
 import { publicJobs, readStore } from "@/lib/store";
 
-export const dynamic = "force-dynamic";
+export const dynamicParams = false;
 
 type Params = { id: string };
+
+export async function generateStaticParams() {
+  const store = await readStore();
+  const jobs = publicJobs(store);
+  if (jobs.length === 0) return [{ id: "unpublished" }];
+  return jobs.map((job) => ({ id: job.id }));
+}
 
 export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
   const { id } = await params;
@@ -22,7 +28,21 @@ export default async function JobPage({ params }: { params: Promise<Params> }) {
   const { id } = await params;
   const store = await readStore();
   const job = publicJobs(store).find((item) => item.id === id);
-  if (!job) notFound();
+  if (!job) {
+    return (
+      <SiteShell>
+        <article className="bg-white">
+          <div className="mx-auto w-full max-w-[800px] px-5 py-16 sm:px-8">
+            <h1 className="font-heading text-4xl font-semibold text-navy">No published opportunity</h1>
+            <p className="mt-4 leading-8 text-ink">Vacancies appear here after they are approved for publication.</p>
+            <Link href="/careers" className="mt-8 inline-flex min-h-12 items-center bg-teal px-6 font-semibold text-white">
+              Back to careers
+            </Link>
+          </div>
+        </article>
+      </SiteShell>
+    );
+  }
 
   return (
     <SiteShell>

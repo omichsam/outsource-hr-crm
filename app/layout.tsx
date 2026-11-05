@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/images/hero.jpg",
-        alt: "Professionals collaborating in a modern workplace",
+        alt: "African professionals in discussion around a boardroom table",
       },
     ],
   },

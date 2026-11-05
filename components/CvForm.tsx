@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { employmentTypes, experienceBands, qualifications } from "@/lib/content/company";
+import { apiUrl, staticFormMessage, staticHost } from "@/lib/hosting";
 
 const field =
   "mt-1.5 min-h-12 w-full border border-line bg-white px-3 text-base font-normal text-ink outline-none transition focus:border-teal";
@@ -22,8 +23,12 @@ export function CvForm({ jobId = "", jobTitle = "" }: { jobId?: string; jobTitle
     setErrors(next);
     setFormError("");
     if (Object.keys(next).length) return;
+    if (staticHost) {
+      setFormError(staticFormMessage);
+      return;
+    }
     setPending(true);
-    const response = await fetch("/api/applications", { method: "POST", body: data });
+    const response = await fetch(apiUrl("/api/applications"), { method: "POST", body: data });
     setPending(false);
     if (!response.ok) {
       const body = (await response.json().catch(() => ({}))) as { error?: string };
@@ -48,6 +53,7 @@ export function CvForm({ jobId = "", jobTitle = "" }: { jobId?: string; jobTitle
 
   return (
     <form className="grid gap-4" onSubmit={onSubmit} noValidate>
+      {staticHost && <p className="text-sm leading-6 text-muted">{staticFormMessage}</p>}
       {jobTitle && (
         <p className="border border-line bg-mist px-4 py-3 text-sm text-ink">
           Applying for <span className="font-semibold">{jobTitle}</span>

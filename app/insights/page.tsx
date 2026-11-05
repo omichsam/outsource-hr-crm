@@ -19,7 +19,7 @@ export default function InsightsPage() {
         title="Clear thinking for people at work."
         lede="Short editorial notes on managing teams, hiring carefully and running the everyday work of a people function."
         image="/images/workshop.jpg"
-        imageAlt="Professionals in a workshop discussion"
+        imageAlt="African professionals working together at computers"
       />
       <section className="bg-white">
         <div className="mx-auto w-full max-w-[1200px] px-5 py-12 sm:px-8">

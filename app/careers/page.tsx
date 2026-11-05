@@ -5,20 +5,13 @@ import { PageHero } from "@/components/PageHero";
 import { SiteShell } from "@/components/SiteShell";
 import { publicJobs, readStore } from "@/lib/store";
 
-export const dynamic = "force-dynamic";
-
 export const metadata: Metadata = {
   title: "Careers",
   description:
     "View vacancies approved for publication by Avenyra Global, or submit your CV for future opportunities.",
 };
 
-export default async function CareersPage({
-  searchParams,
-}: {
-  searchParams: Promise<{ job?: string }>;
-}) {
-  const params = await searchParams;
+export default async function CareersPage() {
   const store = await readStore();
   const jobs: PublicVacancy[] = publicJobs(store).map((job) => ({
     id: job.id,
@@ -29,7 +22,6 @@ export default async function CareersPage({
     summary: job.summary,
     deadline: job.deadline || "To be confirmed",
   }));
-  const selected = jobs.find((job) => job.id === params.job);
 
   return (
     <SiteShell>
@@ -38,7 +30,7 @@ export default async function CareersPage({
         title="Talent creates possibilities. Opportunities create futures."
         lede="We connect talented individuals with organisations seeking capable, motivated and skilled professionals. Only vacancies approved for publication are shown here."
         image="/images/careers.jpg"
-        imageAlt="Professionals seated together in a meeting"
+        imageAlt="Two African professionals in conversation at a meeting table"
       />
       <section className="bg-white">
         <div className="mx-auto w-full max-w-[1200px] px-5 py-16 sm:px-8">
@@ -58,7 +50,7 @@ export default async function CareersPage({
             </p>
           </div>
           <div className="bg-white p-6 sm:p-8">
-            <CvForm jobId={selected?.id || ""} jobTitle={selected?.title || ""} />
+            <CvForm />
           </div>
         </div>
       </section>

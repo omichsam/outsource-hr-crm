@@ -1,8 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { enquiryTypes } from "@/lib/content/company";
 import { services } from "@/lib/content/services";
+import { apiUrl, staticFormMessage, staticHost } from "@/lib/hosting";
 
 const field =
   "mt-1.5 min-h-12 w-full border border-line bg-white px-3 text-base font-normal text-ink outline-none transition focus:border-teal";
@@ -18,6 +19,22 @@ export function ContactForm({
   const [done, setDone] = useState(false);
   const [formError, setFormError] = useState("");
   const [errors, setErrors] = useState<Record<string, string>>({});
+  const [enquiry, setEnquiry] = useState(defaultEnquiry);
+  const [service, setService] = useState(defaultService);
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const requested = params.get("enquiry");
+    const nextEnquiry =
+      requested === "consultation"
+        ? "Request a consultation"
+        : requested === "service"
+          ? "Service enquiry"
+          : enquiryTypes.find((item) => item === requested) || "";
+    const requestedService = params.get("service") || "";
+    if (nextEnquiry) setEnquiry(nextEnquiry);
+    if (services.some((item) => item.slug === requestedService)) setService(requestedService);
+  }, []);
 
   async function onSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -27,8 +44,12 @@ export function ContactForm({
     setErrors(next);
     setFormError("");
     if (Object.keys(next).length) return;
+    if (staticHost) {
+      setFormError(staticFormMessage);
+      return;
+    }
     setPending(true);
-    const response = await fetch("/api/leads", {
+    const response = await fetch(apiUrl("/api/leads"), {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
@@ -59,13 +80,21 @@ export function ContactForm({
 
   return (
     <form className="grid gap-4" onSubmit={onSubmit} noValidate>
+      {staticHost && <p className="text-sm leading-6 text-muted">{staticFormMessage}</p>}
       <Field label="Full name" name="name" autoComplete="name" error={errors.name} required />
       <Field label="Email" name="email" type="email" autoComplete="email" error={errors.email} required />
       <Field label="Telephone" name="phone" type="tel" autoComplete="tel" error={errors.phone} required />
       <Field label="Organisation" name="organisation" autoComplete="organization" error={errors.organisation} />
       <label className="text-sm font-semibold text-navy">
         Enquiry type
-        <select name="enquiryType" defaultValue={defaultEnquiry} className={field} required aria-invalid={Boolean(errors.enquiryType)}>
+        <select
+          name="enquiryType"
+          value={enquiry}
+          onChange={(event) => setEnquiry(event.target.value)}
+          className={field}
+          required
+          aria-invalid={Boolean(errors.enquiryType)}
+        >
           <option value="">Select an enquiry type</option>
           {enquiryTypes.map((type) => (
             <option key={type} value={type}>
@@ -77,7 +106,13 @@ export function ContactForm({
       </label>
       <label className="text-sm font-semibold text-navy">
         Service of interest
-        <select name="service" defaultValue={defaultService} className={field} aria-invalid={Boolean(errors.service)}>
+        <select
+          name="service"
+          value={service}
+          onChange={(event) => setService(event.target.value)}
+          className={field}
+          aria-invalid={Boolean(errors.service)}
+        >
           <option value="">Select a service, if relevant</option>
           {services.map((service) => (
             <option key={service.slug} value={service.slug}>

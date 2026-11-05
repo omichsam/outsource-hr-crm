@@ -18,7 +18,7 @@ export default function AboutPage() {
         title="A people-centred workforce partner."
         lede="Avenyra Global works with organisations that need practical human resource support, and with people looking for work that suits their skills."
         image="/images/team.jpg"
-        imageAlt="Professionals seated together in a modern meeting room"
+        imageAlt="An African facilitator leading a workshop discussion at a flipchart"
       />
 
       <section className="bg-white">
@@ -84,7 +84,7 @@ export default function AboutPage() {
           <div className="relative aspect-[4/3] overflow-hidden">
             <Image
               src="/images/colleagues.jpg"
-              alt="A professional seated in a glass-walled office"
+              alt="African colleagues working on laptops in an open office"
               fill
               className="object-cover"
               sizes="(min-width: 1024px) 50vw, 100vw"

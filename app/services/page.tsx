@@ -18,7 +18,7 @@ export default function ServicesPage() {
         title="Comprehensive human resource solutions."
         lede="From finding the right talent to managing everyday workforce requirements, Avenyra Global provides HR services for organisations at different stages of growth."
         image="/images/meeting.jpg"
-        imageAlt="Professionals meeting in a corporate boardroom"
+        imageAlt="African professionals in discussion around a boardroom table"
       />
       <nav aria-label="Services" className="border-b border-line bg-white">
         <div className="mx-auto flex w-full max-w-[1200px] gap-2 overflow-x-auto px-5 py-4 sm:px-8">

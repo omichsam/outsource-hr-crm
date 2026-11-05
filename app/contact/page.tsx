@@ -1,28 +1,14 @@
 import type { Metadata } from "next";
 import { ContactForm } from "@/components/ContactForm";
 import { SiteShell } from "@/components/SiteShell";
-import { contactDetails, enquiryTypes } from "@/lib/content/company";
-import { services } from "@/lib/content/services";
+import { contactDetails } from "@/lib/content/company";
 
 export const metadata: Metadata = {
   title: "Contact Us",
   description: "Start a conversation with Avenyra Global about human resource and recruitment support.",
 };
 
-export default async function ContactPage({
-  searchParams,
-}: {
-  searchParams: Promise<{ enquiry?: string; service?: string }>;
-}) {
-  const params = await searchParams;
-  const enquiry =
-    params.enquiry === "consultation"
-      ? "Request a consultation"
-      : params.enquiry === "service"
-        ? "Service enquiry"
-        : enquiryTypes.find((item) => item === params.enquiry) || "";
-  const service = services.some((item) => item.slug === params.service) ? params.service || "" : "";
-
+export default function ContactPage() {
   return (
     <SiteShell>
       <section className="bg-navy text-white">
@@ -56,7 +42,7 @@ export default async function ContactPage({
           <div className="border border-line p-6 sm:p-8">
             <h2 className="font-heading text-2xl font-semibold text-navy">Send an enquiry</h2>
             <div className="mt-6">
-              <ContactForm defaultEnquiry={enquiry} defaultService={service} />
+              <ContactForm />
             </div>
           </div>
         </div>

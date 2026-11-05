@@ -2,6 +2,8 @@ import type { MetadataRoute } from "next";
 import { articles } from "@/lib/content/insights";
 import { services } from "@/lib/content/services";
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
   const paths = ["", "/about", "/services", "/industries", "/careers", "/insights", "/contact", "/privacy", "/terms"];

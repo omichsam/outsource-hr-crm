@@ -14,7 +14,7 @@ export const industries: Industry[] = [
     slug: "government-public-sector",
     title: "Government & Public Sector",
     image: "/images/civic.jpg",
-    imageAlt: "A modern civic building with a glass facade",
+    imageAlt: "African professionals gathered around a workshop flipchart",
     introduction:
       "Public institutions need workforce processes that are orderly, documented and fair to applicants and employees.",
     challenges: [
@@ -36,7 +36,7 @@ export const industries: Industry[] = [
     slug: "ngos-development",
     title: "NGOs & Development Organisations",
     image: "/images/workshop.jpg",
-    imageAlt: "Professionals collaborating during a workshop",
+    imageAlt: "African professionals working together at computers",
     introduction:
       "Development organisations often employ a mix of continuing staff, project staff and short assignments tied to funding cycles.",
     challenges: [
@@ -58,7 +58,7 @@ export const industries: Industry[] = [
     slug: "financial-services",
     title: "Banking & Financial Services",
     image: "/images/finance.jpg",
-    imageAlt: "A professional reviewing financial documents at a desk",
+    imageAlt: "An African professional on a phone call at a desk with documents",
     introduction:
       "Banks and other financial organisations depend on accurate administration and careful handling of employee information.",
     challenges: [
@@ -80,7 +80,7 @@ export const industries: Industry[] = [
     slug: "healthcare",
     title: "Healthcare & Medical Services",
     image: "/images/healthcare.jpg",
-    imageAlt: "Healthcare professionals in a bright clinical environment",
+    imageAlt: "An African clinician with a clipboard speaking with a patient",
     introduction:
       "Healthcare employers need workforce support that respects professional duties, shift patterns and the sensitivity of the workplace.",
     challenges: [
@@ -102,7 +102,7 @@ export const industries: Industry[] = [
     slug: "construction-engineering",
     title: "Construction & Engineering",
     image: "/images/construction.jpg",
-    imageAlt: "An architectural structure on a construction project",
+    imageAlt: "Two African professionals shaking hands",
     introduction:
       "Construction and engineering work moves with projects, sites and contracts. The workforce often does too.",
     challenges: [
@@ -124,7 +124,7 @@ export const industries: Industry[] = [
     slug: "manufacturing-logistics",
     title: "Manufacturing & Logistics",
     image: "/images/manufacturing.jpg",
-    imageAlt: "An engineer working with equipment in a modern industrial setting",
+    imageAlt: "African colleagues working on laptops in an open office",
     introduction:
       "Manufacturing and logistics employers often need both a stable core team and extra hands when volume changes.",
     challenges: [
@@ -146,7 +146,7 @@ export const industries: Industry[] = [
     slug: "hospitality-retail",
     title: "Hospitality & Retail",
     image: "/images/hospitality.jpg",
-    imageAlt: "A restaurant dining room prepared for service",
+    imageAlt: "An African professional listening during a consultation",
     introduction:
       "Hospitality and retail teams change with trading hours, seasons and outlets. People processes need to keep up without becoming heavy.",
     challenges: [
@@ -168,7 +168,7 @@ export const industries: Industry[] = [
     slug: "smes-corporates",
     title: "SMEs & Corporate Organisations",
     image: "/images/office.jpg",
-    imageAlt: "A bright modern office interior with shared worktables",
+    imageAlt: "Portrait of an African professional in a workplace",
     introduction:
       "Growing companies and established corporates both need a people function that matches their stage, not a template copied from somewhere else.",
     challenges: [
