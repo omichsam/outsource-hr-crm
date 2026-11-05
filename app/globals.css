@@ -1,0 +1,249 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter), "Segoe UI", sans-serif;
+  --font-heading: var(--font-manrope), "Segoe UI", sans-serif;
+  --color-navy: #142b45;
+  --color-teal: #168c88;
+  --color-teal-dark: #0e6d6a;
+  --color-gold: #d5ad68;
+  --color-mist: #f5f7fa;
+  --color-ink: #263445;
+  --color-muted: #4c5d70;
+  --color-line: #e2e8ef;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: #d5ad68;
+  color: #142b45;
+}
+
+:focus-visible {
+  outline: 2px solid #168c88;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Internal CRM. These rules do not style the public marketing pages. */
+.admin-shell {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  min-height: 100vh;
+  background: #f4efe6;
+  color: #12243a;
+}
+.admin-nav {
+  background: #0e2744;
+  color: #f4efe6;
+  padding: 20px 16px;
+}
+.admin-nav a,
+.admin-nav button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  color: inherit;
+  border: 0;
+  padding: 8px 10px;
+  text-decoration: none;
+  cursor: pointer;
+  font: inherit;
+}
+.admin-nav a.active,
+.admin-nav button.active {
+  background: rgba(255, 255, 255, 0.1);
+}
+.admin-main {
+  padding: 24px;
+}
+.admin-shell .toolbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.admin-shell .page-title {
+  font-size: 1.6rem;
+  margin: 0;
+}
+.admin-shell .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+.admin-shell .card {
+  background: #fffaf3;
+  border: 1px solid #d9d0c3;
+  padding: 20px;
+}
+.admin-shell .card h2,
+.admin-shell .card h3 {
+  margin: 0 0 8px;
+}
+.admin-shell .muted,
+.admin-shell .meta {
+  color: #3d5168;
+  font-size: 13px;
+}
+.admin-shell table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+.admin-shell th,
+.admin-shell td {
+  border-bottom: 1px solid #d9d0c3;
+  text-align: left;
+  padding: 10px;
+  vertical-align: top;
+  font-size: 14px;
+}
+.admin-shell .row-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.admin-shell .btn {
+  display: inline-block;
+  border: 0;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 11px 16px;
+  background: #b5693a;
+  color: white;
+  border-radius: 2px;
+  font: inherit;
+}
+.admin-shell .btn.ghost {
+  background: white;
+  color: #0e2744;
+  border: 1px solid #d9d0c3;
+}
+.admin-shell .btn.danger {
+  background: #8f2d2d;
+}
+.admin-shell .form {
+  display: grid;
+  gap: 12px;
+  max-width: 560px;
+}
+.admin-shell label {
+  display: grid;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.admin-shell input,
+.admin-shell select,
+.admin-shell textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d9d0c3;
+  background: white;
+  color: #12243a;
+  border-radius: 2px;
+  font: inherit;
+}
+.admin-shell textarea {
+  min-height: 110px;
+}
+.admin-shell .pill {
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 2px 7px;
+  border-radius: 99px;
+  background: #e8efe9;
+  color: #2f6f4e;
+}
+.admin-shell .pill.draft {
+  background: #f3ead4;
+  color: #9a6b12;
+}
+.admin-shell .pill.closed {
+  background: #f3e2e2;
+  color: #8f2d2d;
+}
+.login-card {
+  max-width: 420px;
+  margin: 12vh auto;
+  background: #fffaf3;
+  border: 1px solid #d9d0c3;
+  padding: 28px;
+  color: #12243a;
+}
+.login-card .form {
+  display: grid;
+  gap: 12px;
+}
+.login-card label {
+  display: grid;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.login-card input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d9d0c3;
+  font: inherit;
+}
+.login-card .btn {
+  border: 0;
+  cursor: pointer;
+  padding: 11px 16px;
+  background: #168c88;
+  color: white;
+  font: inherit;
+}
+.login-card .kicker {
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #0e6d6a;
+}
+.login-card .page-title {
+  font-size: 1.8rem;
+  margin: 8px 0;
+}
+.login-card .muted {
+  color: #3d5168;
+}
+.admin-shell .two-col,
+.login-card .two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.error {
+  color: #8f2d2d;
+}
+.admin-shell .brand small,
+.login-card .brand small {
+  display: block;
+  letter-spacing: 0.08em;
+  font-size: 11px;
+  opacity: 0.75;
+}
+
+@media (max-width: 800px) {
+  .admin-shell {
+    grid-template-columns: 1fr;
+  }
+  .admin-shell .two-col {
+    grid-template-columns: 1fr;
+  }
+}

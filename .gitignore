@@ -1,0 +1,6 @@
+node_modules
+.next
+out
+.env
+data/private-uploads
+*.log

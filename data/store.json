@@ -1,0 +1,162 @@
+{
+  "updatedAt": "2026-11-05T16:16:55.864Z",
+  "company": {
+    "displayName": "Avenyra Global",
+    "legalName": "[Legal name to be confirmed]",
+    "tagline": "People. Potential. Progress.",
+    "about": "Avenyra Global provides integrated human resource outsourcing, recruitment and workforce management solutions.",
+    "mission": "To provide human resource outsourcing, recruitment and workforce solutions that help organisations attract capable people and manage them well.",
+    "email": "[General email to be confirmed]",
+    "phone": "[Telephone number to be confirmed]",
+    "address": "[Physical address to be confirmed]",
+    "hours": "[Office hours to be confirmed]",
+    "stats": []
+  },
+  "services": [
+    {
+      "id": "svc-aug",
+      "title": "Staff augmentation",
+      "summary": "Screened employees and contractors who join the client’s daily stand-up.",
+      "body": "Use Northbridge when you need named people on your tools and calendar. We run recruiting, classification, onboarding, and replacement so your managers can direct the work."
+    },
+    {
+      "id": "svc-teams",
+      "title": "Managed teams",
+      "summary": "A Northbridge lead plus a pod measured on throughput, not headcount.",
+      "body": "We staff a pod (operations, finance ops, CX, or engineering support), appoint a delivery lead, and report against an agreed operating cadence."
+    },
+    {
+      "id": "svc-bpo",
+      "title": "Process outsourcing",
+      "summary": "Take a repeatable process—AP, KYC support, tier-1 CX—and run it end to end.",
+      "body": "SOP, quality sampling, and workforce planning sit with us. You keep policy control and a named executive sponsor."
+    }
+  ],
+  "jobs": [
+    {
+      "id": "job-cx-lead",
+      "title": "Customer operations lead",
+      "location": "Remote, US",
+      "type": "Full-time employee",
+      "summary": "Own a 12-person CX pod for a healthcare-admin client. Quality, scheduling, and escalation.",
+      "description": "You will sit between the client operations director and Northbridge HR. Hire from our bench, run daily huddles, and keep QA above the contracted sample rate. Healthcare experience preferred; HIPAA training provided.",
+      "status": "archived",
+      "postedAt": "2026-10-20",
+      "payRate": "92k–110k",
+      "billRate": "internal"
+    },
+    {
+      "id": "job-ap-spec",
+      "title": "Accounts payable specialist",
+      "location": "Chicago, IL (hybrid)",
+      "type": "Contract-to-hire",
+      "summary": "Invoice capture, three-way match, vendor queries for a mid-market manufacturer.",
+      "description": "NetSuite or similar ERP experience required. 6-month contract with conversion intent. Must complete Northbridge contractor checklist before badge pickup.",
+      "status": "archived",
+      "postedAt": "2026-10-28",
+      "payRate": "$38–44/hr",
+      "billRate": "internal"
+    },
+    {
+      "id": "job-recruiter",
+      "title": "Talent partner (internal)",
+      "location": "Chicago, IL",
+      "type": "Full-time employee",
+      "summary": "Fill client reqs and keep the careers site honest.",
+      "description": "Internal recruiting role. You will live in the CRM: publish jobs, work leads, and partner with delivery on replacements.",
+      "status": "draft",
+      "postedAt": "2026-11-01",
+      "payRate": "85k–98k",
+      "billRate": "n/a"
+    }
+  ],
+  "team": [
+    {
+      "id": "tm-elena",
+      "name": "Elena Voss",
+      "title": "Managing partner, delivery",
+      "bio": "Built Northbridge’s managed-team model after a decade running BPO sites. Owns client outcomes and bench health.",
+      "focus": "Delivery & clients",
+      "published": false
+    },
+    {
+      "id": "tm-marcus",
+      "name": "Marcus Hale",
+      "title": "Head of people",
+      "bio": "HR for a workforce that is mostly on someone else’s floor. Classification, onboarding gates, and the careers site all sit with this team.",
+      "focus": "People & compliance",
+      "published": false
+    },
+    {
+      "id": "tm-priya",
+      "name": "Priya Shah",
+      "title": "Director of talent",
+      "bio": "Closes roles against live client reqs and treats the public jobs board as a product, not a brochure.",
+      "focus": "Recruiting",
+      "published": false
+    }
+  ],
+  "news": [
+    {
+      "id": "news-1",
+      "title": "Careers board now driven from the CRM",
+      "date": "2026-11-02",
+      "body": "Published roles, leadership bios, and service copy are edited in the Northbridge CRM and appear on this site without a separate deploy.",
+      "published": false
+    }
+  ],
+  "leads": [],
+  "applications": [],
+  "clients": [
+    {
+      "id": "cl-harbor",
+      "name": "Harborline Health Admin",
+      "sector": "Healthcare administration",
+      "status": "active",
+      "contact": "Dana Ortiz, VP Operations",
+      "notes": "CX pod, HIPAA training required before start."
+    },
+    {
+      "id": "cl-keel",
+      "name": "Keel & Whitaker Manufacturing",
+      "sector": "Industrial",
+      "status": "active",
+      "contact": "Tom Keel, Controller",
+      "notes": "AP specialist contract; badge access Tuesdays."
+    }
+  ],
+  "workers": [
+    {
+      "id": "wk-jordan",
+      "name": "Jordan Ames",
+      "email": "jordan.ames@northbridge.example",
+      "workerType": "delivery_employee",
+      "classification": "employee",
+      "status": "active",
+      "skills": "CX, QA sampling, workforce scheduling",
+      "notes": "Eligible to start. HIPAA current through 2027-03."
+    },
+    {
+      "id": "wk-lin",
+      "name": "Lin Park",
+      "email": "lin.park@contractor.example",
+      "workerType": "contractor",
+      "classification": "contractor",
+      "status": "active",
+      "skills": "NetSuite AP, three-way match",
+      "notes": "W-9 on file. Starts 2026-11-10 pending badge."
+    }
+  ],
+  "placements": [
+    {
+      "id": "pl-1",
+      "workerId": "wk-jordan",
+      "clientId": "cl-harbor",
+      "role": "CX quality lead",
+      "start": "2026-06-02",
+      "end": "",
+      "status": "active",
+      "billable": true
+    }
+  ]
+}
